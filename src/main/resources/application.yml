@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: user-service
+
+  flyway:
+    default-schema: RETAIL_DB
+    locations:
+      - classpath:db/migration
+
+server:
+  port: 8081
+
