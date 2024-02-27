@@ -1,3 +1,22 @@
+{{- define "user-service.env.vars"  }}
+- name: SPRING_DATASOURCE_URL
+  valueFrom:
+    secretKeyRef:
+      name: db-secret
+      key: url
+- name: SPRING_DATASOURCE_USERNAME
+  valueFrom:
+    secretKeyRef:
+       name: db-secret
+       key: username
+- name: SPRING_DATASOURCE_PASSWORD
+  valueFrom:
+     secretKeyRef:
+        name: db-secret
+        key: password
+{{- end }}
+
+
 {{/*
 Expand the name of the chart.
 */}}
