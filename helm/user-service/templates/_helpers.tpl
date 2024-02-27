@@ -14,6 +14,10 @@
      secretKeyRef:
         name: db-secret
         key: password
+- name: SPRING_JPA_DATABASE_PLATFORM
+  value: org.hibernate.dialect.PostgreSQLDialect
+- name: SPRING_PROFILES_ACTIVE
+  value: staging
 {{- end }}
 
 
