@@ -8,9 +8,6 @@ trigger:
 pool:
   name: suchait-consulting-pool
 
-resources:
-- repo: self
-
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'fa116b88-198e-4244-ba06-6a26b201ac61'
@@ -27,7 +24,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: suchait-consulting-pool
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
