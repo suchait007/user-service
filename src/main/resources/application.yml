@@ -3,6 +3,8 @@ spring:
     active: local
   application:
     name: user-service
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
   flyway:
     default-schema: RETAIL_DB

@@ -1,7 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://az-functions-db.postgres.database.azure.com/retail_db
-    username: adminuser12
-    password: Root567%^&
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect

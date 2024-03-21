@@ -2,6 +2,6 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/retail_db
     username: postgres
-    password: EtPGbXpOZY
+    password: anything
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
