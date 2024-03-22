@@ -26,4 +26,4 @@ steps:
     repository: 'urbanimages/user-service'
     command: 'buildAndPush'
     Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-    tags: '(Build.BuildId)'
+    tags: '$(Build.BuildId)'
