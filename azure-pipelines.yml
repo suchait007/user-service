@@ -23,7 +23,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'retailsolution01'
-    repository: 'urbanimages'
+    repository: 'urbanimages/user-service'
     command: 'buildAndPush'
     Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-    tags: 'user-service-$(Build.BuildId)'
+    tags: '(Build.BuildId)'
