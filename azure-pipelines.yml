@@ -12,7 +12,7 @@ steps:
 
 - task: Gradle@3
   inputs:
-    gradleWrapperFile: 'gradlew'
+    gradleWrapperFile: './gradlew'
     workingDirectory: '$(Build.SourcesDirectory)'
     tasks: 'clean build'
     publishJUnitResults: false
