@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: user-service
+  repository: retailsolution01.azurecr.io/urbanimages:user-service-
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0"
